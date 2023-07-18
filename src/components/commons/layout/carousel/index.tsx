@@ -16,16 +16,16 @@ export default function App(): JSX.Element {
   return (
     <Carousel autoplay>
       <div>
-        <ContentStyle>🐥</ContentStyle>
+        <ContentStyle>안녕하세요</ContentStyle>
       </div>
       <div>
-        <ContentStyle>🚀</ContentStyle>
+        <ContentStyle>김우렬입니다.</ContentStyle>
       </div>
       <div>
-        <ContentStyle>🥲</ContentStyle>
+        <ContentStyle>잘 부탁드립니다.</ContentStyle>
       </div>
       <div>
-        <ContentStyle>🌱</ContentStyle>
+        <ContentStyle>감사합니다.</ContentStyle>
       </div>
     </Carousel>
   );
