@@ -12,12 +12,12 @@ const RESTORE_ACCESS_TOKEN = gql`
 export const getAccessToken = async (): Promise<string | undefined> => {
   try {
     const graphQLClient = new GraphQLClient(
-      "http://backend-practice.codebootcamp.co.kr/graphql",
+      "http://backend-practice.codebootcamp.co.kr/graphql05",
       { credentials: "include" }
     );
-    const result = await graphQLClient.request<
-      Pick<IMutation, "restoreAccessToken">
-    >(RESTORE_ACCESS_TOKEN);
+    const result = await graphQLClient.request<Pick<IMutation, "restoreAccessToken">>(
+      RESTORE_ACCESS_TOKEN
+    );
     const newAccessToken = result.restoreAccessToken.accessToken;
     return newAccessToken;
   } catch (error) {
